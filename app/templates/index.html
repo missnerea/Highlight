@@ -9,7 +9,19 @@
     {% endif %}
   </head>
       <body>
-        {% blockcontent %}
+        {% block content %}
+        <div class="container" style="margin-top:10px;">
+</div>
+
+    <div class="container">
+      <div class="row">
+        <ul>
+          {{ macro.displaySourcesList(sources)}}
+        </ul>
+      </div>
+
+    </div>
+
         <style>
         body {
               background-image: url("https://static.tumblr.com/1e1846b975d3240e66953af306e7c580/q76s4ht/Kfdoitx1c/tumblr_static_abz4kkate3cccc00wwcs4go4k_640_v2.jpg");
